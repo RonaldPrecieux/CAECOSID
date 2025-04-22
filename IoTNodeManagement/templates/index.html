@@ -70,25 +70,17 @@
                             </thead>
                             <tbody>
                                 {% for m in microcontroleurs %}
-                                <tr data-uuid="{{ m.uuid }}">
+                                <tr data-uuid='{{ m.uuid }}'>
                                     <td>{{ m.uuid }}</td>
                                     <td class="editable" data-field="nom">{{ m.nom }}</td>
-                                    <td class="editable" data-field="lieu_id">
-                                        <select class="form-control" onchange="updateMicro(this, 'lieu_id', '{{ m.uuid }}')">
-                                            <option value="">Non affecté</option>
-                                            {% for lieu in lieux %}
-                                            <option value="{{ lieu.id }}" {% if m.lieu and m.lieu.id == lieu.id %}selected{% endif %}>{{ lieu.nom }}</option>
-                                            {% endfor %}
-                                        </select>
-                                    </td>
+                                    <td class="editable" data-field="lieu_id" data-lieu-id="{{ m.lieu.id if m.lieu }}"> {{m.lieu.nom}}</td>
+
                                     <td>{{ m.date_affectation.strftime('%Y-%m-%d %H:%M') if m.date_affectation else '' }}</td>
                                     <td class="actions">
                                         <button class="btn btn-danger" onclick="deleteMicro('{{ m.uuid }}')"><i class="fas fa-trash"></i></button>
 
-                                        <!-- <button class="btn btn-edit" onclick="updateMicro(this, 'nom', '{{ m.uuid }}')">
-                                            <i class="fas fa-edit"></i>
-                                          </button>    -->
-                                                                </td>
+                                        <button class="btn btn-edit" onclick="editMicro('{{m.uuid}}')"> <i class="fas fa-edit"></i></button>  
+                                    </td>
                                 </tr>
                                 {% endfor %}
                             </tbody>

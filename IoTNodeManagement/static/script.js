@@ -66,10 +66,12 @@ async function handleLieuSubmit(e) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ nom })
+            body: JSON.stringify({ nom ,id})
         });
         
-        if (!response.ok) throw new Error('Erreur lors de la requête');
+        if (!response.ok) {
+            const errorDetails = await response.json(); // Si le serveur renvoie des détails d'erreur
+            console.error('Server Error:', errorDetails);throw new Error('Erreur lors de la requête')};
         
         refreshData();
         document.getElementById('lieu-modal').style.display = 'none';
@@ -78,17 +80,19 @@ async function handleLieuSubmit(e) {
         alert('Une erreur est survenue');
     }
 }
-
+//POST and PUT
 async function handleMicroSubmit(e) {
     e.preventDefault();
     
     const uuid = document.getElementById('micro-uuid').value || document.getElementById('micro-uuid-input').value;
+    const uuid_cache = document.getElementById('micro-uuid').value;
     const nom = document.getElementById('micro-nom').value;
     const lieu_id = document.getElementById('micro-lieu').value || null;
     
     const url = document.getElementById('micro-uuid').value ? `/microcontroleurs/${uuid}` : '/microcontroleurs/';
     const method = document.getElementById('micro-uuid').value ? 'PUT' : 'POST';
-    
+   
+
     try {
         const response = await fetch(url, {
             method: method,
@@ -98,7 +102,9 @@ async function handleMicroSubmit(e) {
             body: JSON.stringify({ uuid, nom, lieu_id })
         });
         
-        if (!response.ok) throw new Error('Erreur lors de la requête');
+        if (!response.ok) { const errorDetails = await response.json(); // Si le serveur renvoie des détails d'erreur
+            console.error('Server Error:', errorDetails);
+            throw new Error('Erreur lors de la requête');}
         
         refreshData();
         document.getElementById('micro-modal').style.display = 'none';
@@ -117,6 +123,25 @@ function editLieu(id) {
     document.getElementById('modal-lieu-title').textContent = 'Modifier Lieu';
     
     document.getElementById('lieu-modal').style.display = 'flex';
+}
+function editMicro(uuid){
+
+    const row = document.querySelector(`tr[data-uuid="${uuid}"]`);
+    console.log("row trouvé ?", row);
+
+    const lieu = document.querySelector(`tr[data-uuid="${uuid}"] td[data-field="lieu_id"]`).dataset['lieuId'] || "";
+    //const nom = document.querySelector(`tr[data-uuid="${uuid}"] td[data-field="nom"]`).textContent;
+    const nom = row.querySelector(`td[data-field="nom"]`).textContent;
+
+    document.getElementById('modal-micro-title').textContent = "Modifier un Micro-controlleur" ;
+    document.getElementById('micro-nom').value = nom;
+    document.getElementById('micro-uuid-input').value = uuid;
+    document.getElementById('micro-lieu').value = lieu;
+    document.getElementById('micro-uuid').value = uuid;
+    document.getElementById('micro-modal').style.display = 'flex';
+
+
+
 }
 
 async function deleteLieu(id) {
@@ -150,36 +175,6 @@ async function deleteMicro(uuid) {
     } catch (error) {
         console.error('Error:', error);
         alert('Une erreur est survenue lors de la suppression');
-    }
-}
-
-async function updateMicro(selectElement, field, uuid) {
-    const value = selectElement.value;
-    
-    try {
-        const response = await fetch(`/microcontroleurs/${uuid}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ 
-                uuid : uuid,
-                [field]: value || null,
-                nom: document.querySelector(`tr[data-uuid="${uuid}"] td[data-field="nom"]`).textContent
-            })
-        });
-        
-        if (!response.ok) {
-            const errorDetails = await response.json(); // Si le serveur renvoie des détails d'erreur
-            console.error('Server Error:', errorDetails);
-            throw new Error('Erreur lors de la mise à jour');
-        }
-        refreshData();
-    } catch (error) {
-
-        console.error('Error:', error);
-
-        alert('Une erreur est survenue lors de la mise à jour');
     }
 }
 
