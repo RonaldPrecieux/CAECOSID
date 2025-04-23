@@ -2,7 +2,7 @@
 from datetime import datetime
 # 2. Imports tiers
 
-from fastapi import FastAPI, Depends, Request,HTTPException
+from fastapi import FastAPI, Depends, Request,HTTPException,APIRouter
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from fastapi.responses import HTMLResponse
@@ -15,6 +15,13 @@ from database import engine, SessionLocal
 import models
 import schemas
 
+
+mqtt_router = APIRouter(prefix="/mqtt", tags=["MQTT"])
+app = FastAPI()
+app.include_router(mqtt_router)
+
+
+
 # Créer les tables si elles n'existent pas
 models.Base.metadata.create_all(bind=engine)
 # Fonction pour obtenir une session de base de données
@@ -25,7 +32,6 @@ def get_db():
     finally:
         db.close()
 
-app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
@@ -53,6 +59,42 @@ def create_lieu(lieu: schemas.LieuCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(db_lieu)
     return db_lieu
+
+@app.get("/lieux/{lieu_id}", response_model=schemas.Lieu)
+def read_lieu(lieu_id: int, db: Session = Depends(get_db)):
+    db_lieu = db.query(models.Lieux).filter(models.Lieux.id == lieu_id).first()
+    if db_lieu is None:
+        raise HTTPException(status_code=404, detail="Lieu non trouvé")
+    return db_lieu
+
+@app.get("/lieux/nom/{nom}", response_model=schemas.Lieu)
+def read_lieu(nom: str, db: Session = Depends(get_db)):
+    db_lieu = db.query(models.Lieux).filter(models.Lieux.nom == nom).first()
+    if db_lieu is None:
+        raise HTTPException(status_code=404, detail="Lieu non trouvé")
+    return db_lieu
+
+@app.put("/lieux/{lieu_id}", response_model=schemas.Lieu)
+def update_lieu(lieu_id: int, lieu: schemas.LieuCreate, db: Session = Depends(get_db)):
+    db_lieu = db.query(models.Lieux).filter(models.Lieux.id == lieu_id).first()
+    if db_lieu is None:
+        raise HTTPException(status_code=404, detail="Lieu non trouvé")
+    
+    db_lieu.nom = lieu.nom
+    db.commit()
+    db.refresh(db_lieu)
+    return db_lieu
+
+@app.delete("/lieux/{lieu_id}", status_code=204)
+def delete_lieu(lieu_id: int, db: Session = Depends(get_db)):
+    db_lieu = db.query(models.Lieux).filter(models.Lieux.id == lieu_id).first()
+    if db_lieu is None:
+        raise HTTPException(status_code=404, detail="Lieu non trouvé")
+    
+    db.delete(db_lieu)
+    db.commit()
+    return
+
 
 # ------------------- ROUTES MICROCONTROLEURS -------------------
 
@@ -93,3 +135,30 @@ def delete_microcontroleur(uuid: str, db: Session = Depends(get_db)):
     db.delete(db_micro)
     db.commit()
     return {"message": "Microcontrôleur supprimé"}
+
+# ------------------- API POUR LES TOPICS MQTT -------------------
+
+@app.get("/topics/")
+def get_all_topics(db: Session = Depends(get_db)):
+    """
+    Retourne la liste de tous les topics MQTT (UUID des microcontrôleurs).
+    """
+    uuids = db.query(models.Microcontroleur.uuid).all()
+    return [uuid for (uuid,) in uuids]
+
+@app.get("/topics/lieux")
+def get_topics_by_lieu(db: Session = Depends(get_db)):
+    """
+    Retourne un dictionnaire {lieu_nom: [uuid1, uuid2, ...]} pour l'écoute par lieu.
+    """
+    lieux = db.query(models.Lieux).all()
+    microcontroleurs = db.query(models.Microcontroleur).all()
+
+    mapping = {lieu.nom: [] for lieu in lieux}
+    for micro in microcontroleurs:
+        if micro.lieu_id:
+            nom_lieu = next((lieu.nom for lieu in lieux if lieu.id == micro.lieu_id), None)
+            if nom_lieu:
+                mapping[nom_lieu].append(micro.uuid)
+
+    return mapping
