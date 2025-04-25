@@ -29,16 +29,18 @@ class InfluxDBWriter:
         self.write_api = self.client.write_api(write_options=SYNCHRONOUS)
         
     def write_data(self, mac, sensor_type, value, room, unit):
-        point = Point("iot_measurement") \
+        point = Point("iot_measurement2") \
             .tag("device", mac) \
             .tag("sensor", sensor_type) \
             .tag("room", room) \
-            .field("value", value) \
+            .field("value", int(value)) \
             .time(datetime.utcnow())
             
         try:
             self.write_api.write(bucket=INFLUX_BUCKET, record=point)
+            logger.info("Stockage sucessfully")
             logger.debug(f"Written to InfluxDB: {mac}/{sensor_type} = {value}{unit}")
+
         except Exception as e:
             logger.error(f"InfluxDB write error: {str(e)}")
     
@@ -54,6 +56,14 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     try:
+        # print("========== DEBUG MSG ==========")
+        # print("Topic :", msg.topic)
+        # print("QoS :", msg.qos)
+        # print("Retain :", msg.retain)
+        # print("Payload (raw) :", msg.payload)
+        # print("Payload (decoded) :", msg.payload.decode())
+        # print("========== END DEBUG ==========")
+
         topic_parts = msg.topic.split('/')
         mac = topic_parts[1]
         sensor_type = topic_parts[2]
@@ -63,9 +73,8 @@ def on_message(client, userdata, msg):
         required_fields = {'value', 'timestamp', 'room', 'unit'}
         if not all(field in payload for field in required_fields):
             raise ValueError("Invalid payload structure")
-        
-        # print('Pret pour le stockage')
-        # Écriture dans InfluxDB
+       
+        #Écriture dans InfluxDB
         influx_writer.write_data(
             mac=mac,
             sensor_type=sensor_type,
