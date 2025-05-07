@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "image",
+  "data": {
+    "items": [
+      {
+        "id": "0a396602b843bd9c05518701409c764a",
+        "filesize": 5729034,
+        "content_type": "image/jpeg",
+        "name": "red-light-round-podium-black-background-mock-up.jpg",
+        "uploaded_at": "2025-04-30T11:27:08.772591+00:00"
+      },
+      {
+        "id": "85b58722be7bbf026259a87939f10657",
+        "filesize": 6091403,
+        "content_type": "image/jpeg",
+        "name": "abstract-uv-ultraviolet-light-composition.jpg",
+        "uploaded_at": "2025-04-30T13:30:27.087150+00:00"
+      },
+      {
+        "id": "4bfba840cc09173a8d90e484fbeff6f1",
+        "filesize": 6091403,
+        "content_type": "image/jpeg",
+        "name": "abstract-uv-ultraviolet-light-composition.jpg",
+        "uploaded_at": "2025-04-30T14:21:44.419046+00:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2549 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.1745916385687": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "cdf5a1d44cb01ab54e97da687b1f14f4",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:24:52.336359+00:00",
+            "finish": "2025-04-30T19:24:52.341832+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-30T19:24:52.336507+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1745916385687",
+                      "last_triggered": "2025-04-30T19:24:27.309986+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ventilo"
+                    },
+                    "last_changed": "2025-04-30T13:59:47.466260+00:00",
+                    "last_reported": "2025-04-30T19:24:27.312821+00:00",
+                    "last_updated": "2025-04-30T19:24:27.312821+00:00",
+                    "context": {
+                      "id": "01JT42GNSDB5M2CWT733EST4DZ",
+                      "parent_id": "01JT42GNSDS3JSWT445B7PCSB8",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 24.0,
+                    "above": 23.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "20.1",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:24:47.330083+00:00",
+                      "last_reported": "2025-04-30T19:24:47.330083+00:00",
+                      "last_updated": "2025-04-30T19:24:47.330083+00:00",
+                      "context": {
+                        "id": "01JT42H9B22NRC856PSYD2C6PH",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "23.9",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:24:52.335891+00:00",
+                      "last_reported": "2025-04-30T19:24:52.335891+00:00",
+                      "last_updated": "2025-04-30T19:24:52.335891+00:00",
+                      "context": {
+                        "id": "01JT42HE7FDH69H72RB48R1479",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-30T19:24:52.336950+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT42HE7GX2KFKFYR4KWVF077",
+                    "parent_id": "01JT42HE7FDH69H72RB48R1479",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1745916385687",
+            "alias": "Ventilo",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 23,
+                "below": 24
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT42HE7GX2KFKFYR4KWVF077",
+            "parent_id": "01JT42HE7FDH69H72RB48R1479",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "cdf5a1d44cb01ab54e97da687b1f14f4",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:24:52.336359+00:00",
+            "finish": "2025-04-30T19:24:52.341832+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "5eff9c4490529961a0e9d21737a7e1ea",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:25:07.357918+00:00",
+            "finish": "2025-04-30T19:25:07.362388+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-30T19:25:07.358035+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1745916385687",
+                      "last_triggered": "2025-04-30T19:24:52.336653+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ventilo"
+                    },
+                    "last_changed": "2025-04-30T13:59:47.466260+00:00",
+                    "last_reported": "2025-04-30T19:24:52.341498+00:00",
+                    "last_updated": "2025-04-30T19:24:52.341498+00:00",
+                    "context": {
+                      "id": "01JT42HE7GX2KFKFYR4KWVF077",
+                      "parent_id": "01JT42HE7FDH69H72RB48R1479",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 24.0,
+                    "above": 23.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "22.6",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:25:02.346167+00:00",
+                      "last_reported": "2025-04-30T19:25:02.346167+00:00",
+                      "last_updated": "2025-04-30T19:25:02.346167+00:00",
+                      "context": {
+                        "id": "01JT42HR0AMH2YMAB9NZNH9A64",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "23.7",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:25:07.357589+00:00",
+                      "last_reported": "2025-04-30T19:25:07.357589+00:00",
+                      "last_updated": "2025-04-30T19:25:07.357589+00:00",
+                      "context": {
+                        "id": "01JT42HWWX2W092KEDGFA4JC0P",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-30T19:25:07.358343+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT42HWWXQD2B51BZSEJ4PAYK",
+                    "parent_id": "01JT42HWWX2W092KEDGFA4JC0P",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1745916385687",
+            "alias": "Ventilo",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 23,
+                "below": 24
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT42HWWXQD2B51BZSEJ4PAYK",
+            "parent_id": "01JT42HWWX2W092KEDGFA4JC0P",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "5eff9c4490529961a0e9d21737a7e1ea",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:25:07.357918+00:00",
+            "finish": "2025-04-30T19:25:07.362388+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "bee257ada111346fc910eb449c2888cd",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:25:22.372766+00:00",
+            "finish": "2025-04-30T19:25:22.379387+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-30T19:25:22.372928+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1745916385687",
+                      "last_triggered": "2025-04-30T19:25:07.358141+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ventilo"
+                    },
+                    "last_changed": "2025-04-30T13:59:47.466260+00:00",
+                    "last_reported": "2025-04-30T19:25:07.362128+00:00",
+                    "last_updated": "2025-04-30T19:25:07.362128+00:00",
+                    "context": {
+                      "id": "01JT42HWWXQD2B51BZSEJ4PAYK",
+                      "parent_id": "01JT42HWWX2W092KEDGFA4JC0P",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 24.0,
+                    "above": 23.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "21.6",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:25:17.366073+00:00",
+                      "last_reported": "2025-04-30T19:25:17.366073+00:00",
+                      "last_updated": "2025-04-30T19:25:17.366073+00:00",
+                      "context": {
+                        "id": "01JT42J6NPFF4CVFH5D7EX8G4C",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "23.4",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:25:22.372277+00:00",
+                      "last_reported": "2025-04-30T19:25:22.372277+00:00",
+                      "last_updated": "2025-04-30T19:25:22.372277+00:00",
+                      "context": {
+                        "id": "01JT42JBJ43WFX0KJSTJVCKRQ7",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-30T19:25:22.373433+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT42JBJ49GBPQ9A0WHGZ9QCH",
+                    "parent_id": "01JT42JBJ43WFX0KJSTJVCKRQ7",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1745916385687",
+            "alias": "Ventilo",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 23,
+                "below": 24
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT42JBJ49GBPQ9A0WHGZ9QCH",
+            "parent_id": "01JT42JBJ43WFX0KJSTJVCKRQ7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "bee257ada111346fc910eb449c2888cd",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:25:22.372766+00:00",
+            "finish": "2025-04-30T19:25:22.379387+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "5def43540063ddb6d0a8968590506c6b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:26:22.435866+00:00",
+            "finish": "2025-04-30T19:26:22.440379+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-30T19:26:22.435975+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1745916385687",
+                      "last_triggered": "2025-04-30T19:25:22.373083+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ventilo"
+                    },
+                    "last_changed": "2025-04-30T13:59:47.466260+00:00",
+                    "last_reported": "2025-04-30T19:25:22.378190+00:00",
+                    "last_updated": "2025-04-30T19:25:22.378190+00:00",
+                    "context": {
+                      "id": "01JT42JBJ49GBPQ9A0WHGZ9QCH",
+                      "parent_id": "01JT42JBJ43WFX0KJSTJVCKRQ7",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 24.0,
+                    "above": 23.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "24.6",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:26:17.431171+00:00",
+                      "last_reported": "2025-04-30T19:26:17.431171+00:00",
+                      "last_updated": "2025-04-30T19:26:17.431171+00:00",
+                      "context": {
+                        "id": "01JT42M1AQ3FGFMH7MKG96D76M",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "23.5",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:26:22.435513+00:00",
+                      "last_reported": "2025-04-30T19:26:22.435513+00:00",
+                      "last_updated": "2025-04-30T19:26:22.435513+00:00",
+                      "context": {
+                        "id": "01JT42M673N1XMT1ED7VX4VVKV",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-30T19:26:22.436295+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT42M673FRSSACF7BQHCMWDF",
+                    "parent_id": "01JT42M673N1XMT1ED7VX4VVKV",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1745916385687",
+            "alias": "Ventilo",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 23,
+                "below": 24
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT42M673FRSSACF7BQHCMWDF",
+            "parent_id": "01JT42M673N1XMT1ED7VX4VVKV",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "5def43540063ddb6d0a8968590506c6b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:26:22.435866+00:00",
+            "finish": "2025-04-30T19:26:22.440379+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "309c17a9ad2f5d9f2fc75e772832b1e6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:26:37.452774+00:00",
+            "finish": "2025-04-30T19:26:37.456763+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-04-30T19:26:37.452883+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1745916385687",
+                      "last_triggered": "2025-04-30T19:26:22.436078+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ventilo"
+                    },
+                    "last_changed": "2025-04-30T13:59:47.466260+00:00",
+                    "last_reported": "2025-04-30T19:26:22.439498+00:00",
+                    "last_updated": "2025-04-30T19:26:22.439498+00:00",
+                    "context": {
+                      "id": "01JT42M673FRSSACF7BQHCMWDF",
+                      "parent_id": "01JT42M673N1XMT1ED7VX4VVKV",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 24.0,
+                    "above": 23.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "24.8",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:26:32.447864+00:00",
+                      "last_reported": "2025-04-30T19:26:32.447864+00:00",
+                      "last_updated": "2025-04-30T19:26:32.447864+00:00",
+                      "context": {
+                        "id": "01JT42MFZZGVZB2ZVKBRYE07TX",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "23.5",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-04-30T19:26:37.452458+00:00",
+                      "last_reported": "2025-04-30T19:26:37.452458+00:00",
+                      "last_updated": "2025-04-30T19:26:37.452458+00:00",
+                      "context": {
+                        "id": "01JT42MMWC4T2GNSJ6FK8RBFXN",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-04-30T19:26:37.453178+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT42MMWCMQMJC8X4QSWDYK3H",
+                    "parent_id": "01JT42MMWC4T2GNSJ6FK8RBFXN",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1745916385687",
+            "alias": "Ventilo",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 23,
+                "below": 24
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT42MMWCMQMJC8X4QSWDYK3H",
+            "parent_id": "01JT42MMWC4T2GNSJ6FK8RBFXN",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "309c17a9ad2f5d9f2fc75e772832b1e6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-04-30T19:26:37.452774+00:00",
+            "finish": "2025-04-30T19:26:37.456763+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1745916385687",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      }
+    ],
+    "automation.1746041240201": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "4eb728922d0c40cf57d5f9025c24a8f9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:38:42.574304+00:00",
+            "finish": "2025-05-01T16:38:42.576337+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.humidite_salon",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2025-05-01T16:38:42.574371+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.allumer_ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746041240201",
+                      "last_triggered": "2025-05-01T16:38:37.568146+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Allumer Ventilo"
+                    },
+                    "last_changed": "2025-04-30T19:28:11.185685+00:00",
+                    "last_reported": "2025-05-01T16:38:37.575977+00:00",
+                    "last_updated": "2025-05-01T16:38:37.575977+00:00",
+                    "context": {
+                      "id": "01JT6BDR7ZREYCQRNSMVQ51HGP",
+                      "parent_id": "01JT6BDR7ZF67RMY4Z16GAW9QB",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.humidite_salon",
+                    "below": null,
+                    "above": 75.0,
+                    "from_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "40.7",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:38:37.570073+00:00",
+                      "last_reported": "2025-05-01T16:38:37.570073+00:00",
+                      "last_updated": "2025-05-01T16:38:37.570073+00:00",
+                      "context": {
+                        "id": "01JT6BDR829AKZNKHBNFNBCJHY",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "76.3",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:38:42.574112+00:00",
+                      "last_reported": "2025-05-01T16:38:42.574112+00:00",
+                      "last_updated": "2025-05-01T16:38:42.574112+00:00",
+                      "context": {
+                        "id": "01JT6BDX4ESGHZA8Y7BRP27GG6",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.humidite_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-05-01T16:38:42.574501+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT6BDX4E3EX506VTVDAV4QRN",
+                    "parent_id": "01JT6BDX4ESGHZA8Y7BRP27GG6",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746041240201",
+            "alias": "Allumer Ventilo",
+            "description": "Active le ventilateur si temp\u00e9rature > 28\u00b0C ou humidit\u00e9 > 75%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 28,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "above": 75,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                },
+                "action": "switch.turn_on",
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BDX4E3EX506VTVDAV4QRN",
+            "parent_id": "01JT6BDX4ESGHZA8Y7BRP27GG6",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "4eb728922d0c40cf57d5f9025c24a8f9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:38:42.574304+00:00",
+            "finish": "2025-05-01T16:38:42.576337+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.humidite_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "87f0698776fe1d2819b47927a66b741b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:12.602626+00:00",
+            "finish": "2025-05-01T16:39:12.606156+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-05-01T16:39:12.602753+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.allumer_ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746041240201",
+                      "last_triggered": "2025-05-01T16:38:42.574428+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Allumer Ventilo"
+                    },
+                    "last_changed": "2025-04-30T19:28:11.185685+00:00",
+                    "last_reported": "2025-05-01T16:38:42.576238+00:00",
+                    "last_updated": "2025-05-01T16:38:42.576238+00:00",
+                    "context": {
+                      "id": "01JT6BDX4E3EX506VTVDAV4QRN",
+                      "parent_id": "01JT6BDX4ESGHZA8Y7BRP27GG6",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": null,
+                    "above": 28.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "27.6",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:07.596779+00:00",
+                      "last_reported": "2025-05-01T16:39:07.596779+00:00",
+                      "last_updated": "2025-05-01T16:39:07.596779+00:00",
+                      "context": {
+                        "id": "01JT6BENJC6XZNSKQH0SK62DNE",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "28.4",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:12.602309+00:00",
+                      "last_reported": "2025-05-01T16:39:12.602309+00:00",
+                      "last_updated": "2025-05-01T16:39:12.602309+00:00",
+                      "context": {
+                        "id": "01JT6BETET3R7KFQBM0PQ73KE5",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-05-01T16:39:12.602965+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT6BETETW720T60EMKMKNHYB",
+                    "parent_id": "01JT6BETET3R7KFQBM0PQ73KE5",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746041240201",
+            "alias": "Allumer Ventilo",
+            "description": "Active le ventilateur si temp\u00e9rature > 28\u00b0C ou humidit\u00e9 > 75%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 28,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "above": 75,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                },
+                "action": "switch.turn_on",
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BETETW720T60EMKMKNHYB",
+            "parent_id": "01JT6BETET3R7KFQBM0PQ73KE5",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "87f0698776fe1d2819b47927a66b741b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:12.602626+00:00",
+            "finish": "2025-05-01T16:39:12.606156+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "8ca162c080ce153a2d8b4bb486389846",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:27.619870+00:00",
+            "finish": "2025-05-01T16:39:27.625316+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-05-01T16:39:27.619963+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.allumer_ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746041240201",
+                      "last_triggered": "2025-05-01T16:39:12.602851+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Allumer Ventilo"
+                    },
+                    "last_changed": "2025-04-30T19:28:11.185685+00:00",
+                    "last_reported": "2025-05-01T16:39:12.605803+00:00",
+                    "last_updated": "2025-05-01T16:39:12.605803+00:00",
+                    "context": {
+                      "id": "01JT6BETETW720T60EMKMKNHYB",
+                      "parent_id": "01JT6BETET3R7KFQBM0PQ73KE5",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": null,
+                    "above": 28.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "27.9",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:22.612054+00:00",
+                      "last_reported": "2025-05-01T16:39:22.612054+00:00",
+                      "last_updated": "2025-05-01T16:39:22.612054+00:00",
+                      "context": {
+                        "id": "01JT6BF47MNK81FXK0FK0CX6SY",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "28.6",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:27.619650+00:00",
+                      "last_reported": "2025-05-01T16:39:27.619650+00:00",
+                      "last_updated": "2025-05-01T16:39:27.619650+00:00",
+                      "context": {
+                        "id": "01JT6BF9437JCK86K38Y3P7F9S",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-05-01T16:39:27.620162+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT6BF943A0H5FY739ERY2QKJ",
+                    "parent_id": "01JT6BF9437JCK86K38Y3P7F9S",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746041240201",
+            "alias": "Allumer Ventilo",
+            "description": "Active le ventilateur si temp\u00e9rature > 28\u00b0C ou humidit\u00e9 > 75%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 28,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "above": 75,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                },
+                "action": "switch.turn_on",
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BF943A0H5FY739ERY2QKJ",
+            "parent_id": "01JT6BF9437JCK86K38Y3P7F9S",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "8ca162c080ce153a2d8b4bb486389846",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:27.619870+00:00",
+            "finish": "2025-05-01T16:39:27.625316+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "ae2b1973c14cf4a0e9e12436bd650cfc",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:37.638564+00:00",
+            "finish": "2025-05-01T16:39:37.640814+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.humidite_salon",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2025-05-01T16:39:37.638652+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.allumer_ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746041240201",
+                      "last_triggered": "2025-05-01T16:39:27.620048+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Allumer Ventilo"
+                    },
+                    "last_changed": "2025-04-30T19:28:11.185685+00:00",
+                    "last_reported": "2025-05-01T16:39:27.624805+00:00",
+                    "last_updated": "2025-05-01T16:39:27.624805+00:00",
+                    "context": {
+                      "id": "01JT6BF943A0H5FY739ERY2QKJ",
+                      "parent_id": "01JT6BF9437JCK86K38Y3P7F9S",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.humidite_salon",
+                    "below": null,
+                    "above": 75.0,
+                    "from_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "71.9",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:32.633446+00:00",
+                      "last_reported": "2025-05-01T16:39:32.633446+00:00",
+                      "last_updated": "2025-05-01T16:39:32.633446+00:00",
+                      "context": {
+                        "id": "01JT6BFE0S996FK0XA72Y774TE",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "75.8",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:37.638147+00:00",
+                      "last_reported": "2025-05-01T16:39:37.638147+00:00",
+                      "last_updated": "2025-05-01T16:39:37.638147+00:00",
+                      "context": {
+                        "id": "01JT6BFJX63AM3Q9YJ4KYGQ5QB",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.humidite_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-05-01T16:39:37.638830+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT6BFJX6999X46QKWRTDZ8W5",
+                    "parent_id": "01JT6BFJX63AM3Q9YJ4KYGQ5QB",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746041240201",
+            "alias": "Allumer Ventilo",
+            "description": "Active le ventilateur si temp\u00e9rature > 28\u00b0C ou humidit\u00e9 > 75%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 28,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "above": 75,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                },
+                "action": "switch.turn_on",
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BFJX6999X46QKWRTDZ8W5",
+            "parent_id": "01JT6BFJX63AM3Q9YJ4KYGQ5QB",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "ae2b1973c14cf4a0e9e12436bd650cfc",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:37.638564+00:00",
+            "finish": "2025-05-01T16:39:37.640814+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.humidite_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "009b756670938b01d28b4f5774f290c9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:52.651503+00:00",
+            "finish": "2025-05-01T16:39:52.656182+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-05-01T16:39:52.651619+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.allumer_ventilo",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746041240201",
+                      "last_triggered": "2025-05-01T16:39:37.638728+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Allumer Ventilo"
+                    },
+                    "last_changed": "2025-04-30T19:28:11.185685+00:00",
+                    "last_reported": "2025-05-01T16:39:37.640661+00:00",
+                    "last_updated": "2025-05-01T16:39:37.640661+00:00",
+                    "context": {
+                      "id": "01JT6BFJX6999X46QKWRTDZ8W5",
+                      "parent_id": "01JT6BFJX63AM3Q9YJ4KYGQ5QB",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": null,
+                    "above": 28.0,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "21.4",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:47.644903+00:00",
+                      "last_reported": "2025-05-01T16:39:47.644903+00:00",
+                      "last_updated": "2025-05-01T16:39:47.644903+00:00",
+                      "context": {
+                        "id": "01JT6BFWNWSZ2HV9446G0RA93R",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "28.8",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:52.651264+00:00",
+                      "last_reported": "2025-05-01T16:39:52.651264+00:00",
+                      "last_updated": "2025-05-01T16:39:52.651264+00:00",
+                      "context": {
+                        "id": "01JT6BG1JBQJSP1P3C913YSEJE",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-05-01T16:39:52.651828+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JT6BG1JBR4WPD6YGTB4165P1",
+                    "parent_id": "01JT6BG1JBQJSP1P3C913YSEJE",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.ventilateur_salon"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746041240201",
+            "alias": "Allumer Ventilo",
+            "description": "Active le ventilateur si temp\u00e9rature > 28\u00b0C ou humidit\u00e9 > 75%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "above": 28,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "above": 75,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                },
+                "action": "switch.turn_on",
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BG1JBR4WPD6YGTB4165P1",
+            "parent_id": "01JT6BG1JBQJSP1P3C913YSEJE",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "009b756670938b01d28b4f5774f290c9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-05-01T16:39:52.651503+00:00",
+            "finish": "2025-05-01T16:39:52.656182+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746041240201",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      }
+    ],
+    "automation.1746043190796": [
+      {
+        "extended_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "2c72b7c2ae1f9f517d1127ad11fada4a",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:38:57.586187+00:00",
+            "finish": "2025-05-01T16:38:57.587076+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-05-01T16:38:57.586286+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.eteindre_le_ventilateur",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746043190796",
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Eteindre le ventilateur"
+                    },
+                    "last_changed": "2025-04-30T20:05:03.964942+00:00",
+                    "last_reported": "2025-04-30T20:05:03.964942+00:00",
+                    "last_updated": "2025-04-30T20:05:03.964942+00:00",
+                    "context": {
+                      "id": "01JT44V1AW8JXQ3XWYFBNNHH0M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 26.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "27.9",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:38:52.579538+00:00",
+                      "last_reported": "2025-05-01T16:38:52.579538+00:00",
+                      "last_updated": "2025-05-01T16:38:52.579538+00:00",
+                      "context": {
+                        "id": "01JT6BE6X3KWS9GFJ8DGP74KEV",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "22.7",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:38:57.585513+00:00",
+                      "last_reported": "2025-05-01T16:38:57.585513+00:00",
+                      "last_updated": "2025-05-01T16:38:57.585513+00:00",
+                      "context": {
+                        "id": "01JT6BEBSHTDS3T83JSYSZESET",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2025-05-01T16:38:57.586352+00:00",
+                "error": "In 'numeric_state':\n  In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/0/entity_id/0": [
+              {
+                "path": "condition/0/entity_id/0",
+                "timestamp": "2025-05-01T16:38:57.586396+00:00",
+                "error": "In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/1": [
+              {
+                "path": "condition/1",
+                "timestamp": "2025-05-01T16:38:57.586521+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/1/entity_id/0": [
+              {
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2025-05-01T16:38:57.586553+00:00",
+                "result": {
+                  "result": true,
+                  "state": 25.8
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746043190796",
+            "alias": "Eteindre le ventilateur",
+            "description": "\u00c9teint le ventilateur si T < 26\u00b0C et H < 70%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "below": 26,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "below": 70,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.temp_salon",
+                "below": 26
+              },
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.humidite_salon",
+                "below": 70
+              }
+            ],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BEBSJZV7H59PXPACC240M",
+            "parent_id": "01JT6BEBSHTDS3T83JSYSZESET",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "2c72b7c2ae1f9f517d1127ad11fada4a",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:38:57.586187+00:00",
+            "finish": "2025-05-01T16:38:57.587076+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "c5a57c39a06d0651dee434d37b7d657f",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:22.612911+00:00",
+            "finish": "2025-05-01T16:39:22.613320+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.humidite_salon",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2025-05-01T16:39:22.612938+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.eteindre_le_ventilateur",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746043190796",
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Eteindre le ventilateur"
+                    },
+                    "last_changed": "2025-04-30T20:05:03.964942+00:00",
+                    "last_reported": "2025-04-30T20:05:03.964942+00:00",
+                    "last_updated": "2025-04-30T20:05:03.964942+00:00",
+                    "context": {
+                      "id": "01JT44V1AW8JXQ3XWYFBNNHH0M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.humidite_salon",
+                    "below": 70.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "71.3",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:17.608985+00:00",
+                      "last_reported": "2025-05-01T16:39:17.608985+00:00",
+                      "last_updated": "2025-05-01T16:39:17.608985+00:00",
+                      "context": {
+                        "id": "01JT6BEZB89XDCPPBBCMZS4ZGJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "21.6",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:22.612720+00:00",
+                      "last_reported": "2025-05-01T16:39:22.612720+00:00",
+                      "last_updated": "2025-05-01T16:39:22.612720+00:00",
+                      "context": {
+                        "id": "01JT6BF47MSZX9BP9NWMKN8B6D",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.humidite_salon"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2025-05-01T16:39:22.612961+00:00",
+                "error": "In 'numeric_state':\n  In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/0/entity_id/0": [
+              {
+                "path": "condition/0/entity_id/0",
+                "timestamp": "2025-05-01T16:39:22.612983+00:00",
+                "error": "In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/1": [
+              {
+                "path": "condition/1",
+                "timestamp": "2025-05-01T16:39:22.613059+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/1/entity_id/0": [
+              {
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2025-05-01T16:39:22.613074+00:00",
+                "result": {
+                  "result": true,
+                  "state": 21.6
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746043190796",
+            "alias": "Eteindre le ventilateur",
+            "description": "\u00c9teint le ventilateur si T < 26\u00b0C et H < 70%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "below": 26,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "below": 70,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.temp_salon",
+                "below": 26
+              },
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.humidite_salon",
+                "below": 70
+              }
+            ],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BF47M4GKN3FYCGZ5D5HB1",
+            "parent_id": "01JT6BF47MSZX9BP9NWMKN8B6D",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "c5a57c39a06d0651dee434d37b7d657f",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:22.612911+00:00",
+            "finish": "2025-05-01T16:39:22.613320+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.humidite_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "936fda9a0fdbb3d83649d03795058f69",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:42.640430+00:00",
+            "finish": "2025-05-01T16:39:42.640747+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-05-01T16:39:42.640477+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.eteindre_le_ventilateur",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746043190796",
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Eteindre le ventilateur"
+                    },
+                    "last_changed": "2025-04-30T20:05:03.964942+00:00",
+                    "last_reported": "2025-04-30T20:05:03.964942+00:00",
+                    "last_updated": "2025-04-30T20:05:03.964942+00:00",
+                    "context": {
+                      "id": "01JT44V1AW8JXQ3XWYFBNNHH0M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 26.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "27.7",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:37.637444+00:00",
+                      "last_reported": "2025-05-01T16:39:37.637444+00:00",
+                      "last_updated": "2025-05-01T16:39:37.637444+00:00",
+                      "context": {
+                        "id": "01JT6BFJX5B5B43RSZCS98J5RS",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "20.1",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:42.640147+00:00",
+                      "last_reported": "2025-05-01T16:39:42.640147+00:00",
+                      "last_updated": "2025-05-01T16:39:42.640147+00:00",
+                      "context": {
+                        "id": "01JT6BFQSG15MS7YWZW9SDTZB5",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2025-05-01T16:39:42.640519+00:00",
+                "error": "In 'numeric_state':\n  In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/0/entity_id/0": [
+              {
+                "path": "condition/0/entity_id/0",
+                "timestamp": "2025-05-01T16:39:42.640548+00:00",
+                "error": "In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/1": [
+              {
+                "path": "condition/1",
+                "timestamp": "2025-05-01T16:39:42.640655+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "condition/1/entity_id/0": [
+              {
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2025-05-01T16:39:42.640682+00:00",
+                "result": {
+                  "result": false,
+                  "state": 75.8,
+                  "wanted_state_below": 70.0
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746043190796",
+            "alias": "Eteindre le ventilateur",
+            "description": "\u00c9teint le ventilateur si T < 26\u00b0C et H < 70%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "below": 26,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "below": 70,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.temp_salon",
+                "below": 26
+              },
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.humidite_salon",
+                "below": 70
+              }
+            ],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BFQSGXH6DNDMGCAF60TYW",
+            "parent_id": "01JT6BFQSG15MS7YWZW9SDTZB5",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "936fda9a0fdbb3d83649d03795058f69",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:42.640430+00:00",
+            "finish": "2025-05-01T16:39:42.640747+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "54395939281b5fbcce7e25c4e0f51ee9",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:42.641279+00:00",
+            "finish": "2025-05-01T16:39:42.641587+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.humidite_salon",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2025-05-01T16:39:42.641299+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.eteindre_le_ventilateur",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746043190796",
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Eteindre le ventilateur"
+                    },
+                    "last_changed": "2025-04-30T20:05:03.964942+00:00",
+                    "last_reported": "2025-04-30T20:05:03.964942+00:00",
+                    "last_updated": "2025-04-30T20:05:03.964942+00:00",
+                    "context": {
+                      "id": "01JT44V1AW8JXQ3XWYFBNNHH0M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.humidite_salon",
+                    "below": 70.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "75.8",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:37.638147+00:00",
+                      "last_reported": "2025-05-01T16:39:37.638147+00:00",
+                      "last_updated": "2025-05-01T16:39:37.638147+00:00",
+                      "context": {
+                        "id": "01JT6BFJX63AM3Q9YJ4KYGQ5QB",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.humidite_salon",
+                      "state": "50.1",
+                      "attributes": {
+                        "unit_of_measurement": "%",
+                        "device_class": "temperature",
+                        "friendly_name": "Humidit\u00e9 Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:42.641143+00:00",
+                      "last_reported": "2025-05-01T16:39:42.641143+00:00",
+                      "last_updated": "2025-05-01T16:39:42.641143+00:00",
+                      "context": {
+                        "id": "01JT6BFQSHJ8M9NQA55XFBV8GY",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.humidite_salon"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2025-05-01T16:39:42.641315+00:00",
+                "error": "In 'numeric_state':\n  In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/0/entity_id/0": [
+              {
+                "path": "condition/0/entity_id/0",
+                "timestamp": "2025-05-01T16:39:42.641327+00:00",
+                "error": "In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/1": [
+              {
+                "path": "condition/1",
+                "timestamp": "2025-05-01T16:39:42.641361+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/1/entity_id/0": [
+              {
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2025-05-01T16:39:42.641371+00:00",
+                "result": {
+                  "result": true,
+                  "state": 50.1
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746043190796",
+            "alias": "Eteindre le ventilateur",
+            "description": "\u00c9teint le ventilateur si T < 26\u00b0C et H < 70%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "below": 26,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "below": 70,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.temp_salon",
+                "below": 26
+              },
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.humidite_salon",
+                "below": 70
+              }
+            ],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BFQSHRN0X1RNCPJFXRXFR",
+            "parent_id": "01JT6BFQSHJ8M9NQA55XFBV8GY",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "54395939281b5fbcce7e25c4e0f51ee9",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:42.641279+00:00",
+            "finish": "2025-05-01T16:39:42.641587+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.humidite_salon"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "b74fbefee9f983ec4670244cc86c4bfc",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:57.656580+00:00",
+            "finish": "2025-05-01T16:39:57.657094+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.temperature_salon",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-05-01T16:39:57.656649+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.eteindre_le_ventilateur",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1746043190796",
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Eteindre le ventilateur"
+                    },
+                    "last_changed": "2025-04-30T20:05:03.964942+00:00",
+                    "last_reported": "2025-04-30T20:05:03.964942+00:00",
+                    "last_updated": "2025-04-30T20:05:03.964942+00:00",
+                    "context": {
+                      "id": "01JT44V1AW8JXQ3XWYFBNNHH0M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.temperature_salon",
+                    "below": 26.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "28.8",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:52.651264+00:00",
+                      "last_reported": "2025-05-01T16:39:52.651264+00:00",
+                      "last_updated": "2025-05-01T16:39:52.651264+00:00",
+                      "context": {
+                        "id": "01JT6BG1JBQJSP1P3C913YSEJE",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.temperature_salon",
+                      "state": "22.7",
+                      "attributes": {
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Temp\u00e9rature Salon"
+                      },
+                      "last_changed": "2025-05-01T16:39:57.656312+00:00",
+                      "last_reported": "2025-05-01T16:39:57.656312+00:00",
+                      "last_updated": "2025-05-01T16:39:57.656312+00:00",
+                      "context": {
+                        "id": "01JT6BG6ERBY94VNG10FRFDX39",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "description": "numeric state of sensor.temperature_salon"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2025-05-01T16:39:57.656690+00:00",
+                "error": "In 'numeric_state':\n  In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/0/entity_id/0": [
+              {
+                "path": "condition/0/entity_id/0",
+                "timestamp": "2025-05-01T16:39:57.656720+00:00",
+                "error": "In 'numeric_state' condition: unknown entity sensor.temp_salon"
+              }
+            ],
+            "condition/1": [
+              {
+                "path": "condition/1",
+                "timestamp": "2025-05-01T16:39:57.656802+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/1/entity_id/0": [
+              {
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2025-05-01T16:39:57.656827+00:00",
+                "result": {
+                  "result": true,
+                  "state": 43.6
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1746043190796",
+            "alias": "Eteindre le ventilateur",
+            "description": "\u00c9teint le ventilateur si T < 26\u00b0C et H < 70%",
+            "triggers": [
+              {
+                "entity_id": [
+                  "sensor.temperature_salon"
+                ],
+                "below": 26,
+                "trigger": "numeric_state"
+              },
+              {
+                "entity_id": "sensor.humidite_salon",
+                "below": 70,
+                "trigger": "numeric_state"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.temp_salon",
+                "below": 26
+              },
+              {
+                "condition": "numeric_state",
+                "entity_id": "sensor.humidite_salon",
+                "below": 70
+              }
+            ],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": "switch.ventilateur_salon"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JT6BG6ER558GKGHS36VZHZJ7",
+            "parent_id": "01JT6BG6ERBY94VNG10FRFDX39",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "b74fbefee9f983ec4670244cc86c4bfc",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2025-05-01T16:39:57.656580+00:00",
+            "finish": "2025-05-01T16:39:57.657094+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1746043190796",
+          "trigger": "numeric state of sensor.temperature_salon"
+        }
+      }
+    ]
+  }
+}

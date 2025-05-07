@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_cu",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Salon",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "clock",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 1
+                  }
+                },
+                {
+                  "show_current": true,
+                  "show_forecast": false,
+                  "type": "weather-forecast",
+                  "entity": "weather.forecast_maison",
+                  "forecast_type": "daily",
+                  "name": "Metéo"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "subtitle"
+                },
+                {
+                  "type": "tile",
+                  "entity": "binary_sensor.presence_salon"
+                },
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "graph": "line",
+                      "type": "sensor",
+                      "entity": "sensor.temperature_salon",
+                      "detail": 1,
+                      "limits": {
+                        "min": 0,
+                        "max": 50
+                      }
+                    },
+                    {
+                      "graph": "line",
+                      "type": "sensor",
+                      "entity": "sensor.humidite_salon",
+                      "detail": 1,
+                      "name": "Humidité",
+                      "icon": "mdi:water-percent",
+                      "limits": {
+                        "max": 80,
+                        "min": 20
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.gaz_salon",
+                  "name": "Gaz",
+                  "max": 2000
+                },
+                {
+                  "type": "tile",
+                  "entity": "automation.allumer_ventilo"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "title"
+                },
+                {
+                  "type": "light",
+                  "entity": "light.lampe_salon",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "icon": "mdi:lightbulb-on-80"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.ventilateur_salon",
+                  "name": "Ventilateur",
+                  "show_state": true,
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "icon": "mdi:fan"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "icon": "mdi:television",
+                  "entity": "switch.prise_tele",
+                  "name": "Television",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.alerte",
+                  "icon": "mdi:alarm-light",
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 3
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "sections",
+          "max_columns": 4,
+          "cards": [],
+          "background": {
+            "opacity": 33,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/85b58722be7bbf026259a87939f10657/original"
+          }
+        }
+      ]
+    }
+  }
+}

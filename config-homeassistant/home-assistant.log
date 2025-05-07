@@ -1,0 +1,10 @@
+2025-05-07 10:03:24.018 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-05-07 10:05:24.825 WARNING (MainThread) [homeassistant.bootstrap] Setup timed out for stage 1 waiting on {<Task pending name='platform loaded tts' coro=<async_setup_legacy.<locals>.async_platform_discovered() running at /usr/src/homeassistant/homeassistant/components/tts/legacy.py:194> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.13/asyncio/futures.py:384, Task.task_wakeup()]> cb=[set.remove()]>} - moving forward
+2025-05-07 10:05:47.369 WARNING (MainThread) [homeassistant.setup] Setup of stream is taking over 10 seconds.
+2025-05-07 10:06:25.380 ERROR (MainThread) [homeassistant.components.mqtt.client] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
+2025-05-07 10:06:25.392 ERROR (MainThread) [homeassistant.bootstrap] Error setting up integration dhcp - received exception
+asyncio.exceptions.CancelledError
+2025-05-07 10:06:25.393 ERROR (MainThread) [homeassistant.bootstrap] Error setting up integration default_config - received exception
+asyncio.exceptions.CancelledError
+2025-05-07 10:06:25.393 ERROR (MainThread) [homeassistant.bootstrap] Error setting up integration bluetooth - received exception
+asyncio.exceptions.CancelledError

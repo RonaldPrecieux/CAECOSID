@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"person.edgedomo","state":"unknown","attributes":{"editable":true,"id":"edgedomo","device_trackers":[],"user_id":"b1615700d67f4481ab0ebe482886f6c0","friendly_name":"EdgeDomo"},"last_changed":"2025-05-07T09:03:22.631584+00:00","last_reported":"2025-05-07T09:06:25.472371+00:00","last_updated":"2025-05-07T09:06:25.472371+00:00","context":{"id":"01JTMZY220EJ1113ME5A2SNH1T","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-07T09:51:25.481896+00:00"
+    },
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"2025-04-29T08:39:54.915378+00:00","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-05-07T09:05:24.830902+00:00","last_reported":"2025-05-07T09:05:24.830902+00:00","last_updated":"2025-05-07T09:05:24.830902+00:00","context":{"id":"01JTMZW6TYD9H51YD2F8Q57WBM","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-07T09:51:25.481896+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.allumer_ventilo","state":"on","attributes":{"id":"1746041240201","last_triggered":"2025-05-02T10:37:35.178229+00:00","mode":"single","current":0,"friendly_name":"Allumer Ventilo"},"last_changed":"2025-05-07T09:06:11.832923+00:00","last_reported":"2025-05-07T09:06:11.832923+00:00","last_updated":"2025-05-07T09:06:11.832923+00:00","context":{"id":"01JTMZXMQR1NDQVM92RA9NC10S","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-07T09:51:25.481896+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.eteindre_le_ventilateur","state":"on","attributes":{"id":"1746043190796","last_triggered":null,"mode":"single","current":0,"friendly_name":"Eteindre le ventilateur"},"last_changed":"2025-05-07T09:06:11.833222+00:00","last_reported":"2025-05-07T09:06:11.833222+00:00","last_updated":"2025-05-07T09:06:11.833222+00:00","context":{"id":"01JTMZXMQSD8FMAXGFPF096XK4","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-07T09:51:25.481896+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-05-07T09:06:25.009473+00:00","last_reported":"2025-05-07T09:06:25.009473+00:00","last_updated":"2025-05-07T09:06:25.009473+00:00","context":{"id":"01JTMZY1KHAADA30EBJNNZJGME","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-07T09:51:25.481896+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.humidite_cuisine","state":"unavailable","attributes":{"unit_of_measurement":"%","device_class":"humidity","friendly_name":"Humidité Cuisine"},"last_changed":"2025-05-05T11:17:25.285956+00:00","last_reported":"2025-05-05T11:17:25.285956+00:00","last_updated":"2025-05-05T11:17:25.285956+00:00","context":{"id":"01JTG2MFN5H239BPX54XC91AGG","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "65.90",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-05-05T11:17:25.717984+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.lampe_cuisine","state":"unavailable","attributes":{"friendly_name":"Lampe Cuisine"},"last_changed":"2025-05-05T11:17:25.286134+00:00","last_reported":"2025-05-05T11:17:25.286134+00:00","last_updated":"2025-05-05T11:17:25.286134+00:00","context":{"id":"01JTG2MFN6XDCZH2QM78GARFST","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-05T11:17:25.717984+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temp_cuisine","state":"unavailable","attributes":{"unit_of_measurement":"%","device_class":"temperature","friendly_name":"Temp Cuisine"},"last_changed":"2025-05-05T11:17:25.286246+00:00","last_reported":"2025-05-05T11:17:25.286246+00:00","last_updated":"2025-05-05T11:17:25.286246+00:00","context":{"id":"01JTG2MFN6E40RQJDBQ0MBDJ3X","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "24.70",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-05-05T11:17:25.717984+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature_cuisine","state":"unavailable","attributes":{"friendly_name":"Temperature Cuisine"},"last_changed":"2025-05-02T21:32:02.132513+00:00","last_reported":"2025-05-02T21:32:02.132513+00:00","last_updated":"2025-05-02T21:32:02.132513+00:00","context":{"id":"01JT9EKQ6M26406XRNW47611GP","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-05-02T21:32:02.515895+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature_salon","state":"28.5","attributes":{"unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Température Salon"},"last_changed":"2025-05-02T10:37:40.183830+00:00","last_reported":"2025-05-02T10:37:40.183830+00:00","last_updated":"2025-05-02T10:37:40.183830+00:00","context":{"id":"01JT895HEQXSSZ4EEKPDM1HGSQ","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "28.5",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.humidite_salon","state":"68.4","attributes":{"unit_of_measurement":"%","device_class":"temperature","friendly_name":"Humidité Salon"},"last_changed":"2025-05-02T10:37:40.184627+00:00","last_reported":"2025-05-02T10:37:40.184627+00:00","last_updated":"2025-05-02T10:37:40.184627+00:00","context":{"id":"01JT895HERGD3S1MKE3J3CQCM0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "68.4",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.gaz_salon","state":"565","attributes":{"unit_of_measurement":"ppm","friendly_name":"Gaz Salon"},"last_changed":"2025-05-02T10:37:40.185240+00:00","last_reported":"2025-05-02T10:37:40.185240+00:00","last_updated":"2025-05-02T10:37:40.185240+00:00","context":{"id":"01JT895HESRPM02HWK6HV7C669","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "565",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.presence_salon","state":"off","attributes":{"device_class":"motion","friendly_name":"Présence Salon"},"last_changed":"2025-05-02T10:36:35.113482+00:00","last_reported":"2025-05-02T10:36:35.113482+00:00","last_updated":"2025-05-02T10:36:35.113482+00:00","context":{"id":"01JT893HX91NGYNBQ6C5TH88W0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"light.lampe_salon","state":"on","attributes":{"supported_color_modes":["onoff"],"color_mode":"onoff","friendly_name":"Lampe Salon","supported_features":0},"last_changed":"2025-05-02T08:12:40.298785+00:00","last_reported":"2025-05-02T08:12:40.298785+00:00","last_updated":"2025-05-02T08:12:40.298785+00:00","context":{"id":"01JT80W1F8F0C0NWSW10GF769X","parent_id":null,"user_id":"b1615700d67f4481ab0ebe482886f6c0"}},
+      "extra_data": null,
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.prise_tele","state":"off","attributes":{"friendly_name":"Prise Télé"},"last_changed":"2025-05-02T08:12:50.637315+00:00","last_reported":"2025-05-02T08:12:50.637315+00:00","last_updated":"2025-05-02T08:12:50.637315+00:00","context":{"id":"01JT80WBJBVJF7QXTZSHN27AGH","parent_id":null,"user_id":"b1615700d67f4481ab0ebe482886f6c0"}},
+      "extra_data": null,
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.ventilateur_salon","state":"on","attributes":{"friendly_name":"Ventilateur Salon"},"last_changed":"2025-05-02T08:11:16.860166+00:00","last_reported":"2025-05-02T08:11:16.860166+00:00","last_updated":"2025-05-02T08:11:16.860166+00:00","context":{"id":"01JT80SFZTVZPYZNZQRWBSX2BS","parent_id":null,"user_id":"b1615700d67f4481ab0ebe482886f6c0"}},
+      "extra_data": null,
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.alerte","state":"off","attributes":{"friendly_name":"Alerte"},"last_changed":"2025-05-02T08:12:48.125442+00:00","last_reported":"2025-05-02T08:12:48.125442+00:00","last_updated":"2025-05-02T08:12:48.125442+00:00","context":{"id":"01JT80W93S2GH77WJHVC3JBAW7","parent_id":null,"user_id":"b1615700d67f4481ab0ebe482886f6c0"}},
+      "extra_data": null,
+      "last_seen": "2025-05-02T10:37:41.291443+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.co2_salon","state":"unavailable","attributes":{"unit_of_measurement":"ppm","friendly_name":"CO2 Salon"},"last_changed":"2025-05-01T16:40:14.980107+00:00","last_reported":"2025-05-01T16:40:14.980107+00:00","last_updated":"2025-05-01T16:40:14.980107+00:00","context":{"id":"01JT6BGQC43SNC4JTYYF7QBC11","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "715",
+        "native_unit_of_measurement": "ppm"
+      },
+      "last_seen": "2025-05-01T16:40:19.672944+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.ventilo","state":"on","attributes":{"id":"1745916385687","last_triggered":"2025-04-30T19:26:37.452983+00:00","mode":"single","current":0,"friendly_name":"Ventilo"},"last_changed":"2025-04-30T13:59:47.466260+00:00","last_reported":"2025-04-30T19:26:37.455299+00:00","last_updated":"2025-04-30T19:26:37.455299+00:00","context":{"id":"01JT42MMWCMQMJC8X4QSWDYK3H","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-04-30T19:27:51.478085+00:00"
+    }
+  ]
+}

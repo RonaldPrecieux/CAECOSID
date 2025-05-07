@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "edgedomo",
+        "name": "EdgeDomo",
+        "user_id": "b1615700d67f4481ab0ebe482886f6c0",
+        "device_trackers": []
+      }
+    ]
+  }
+}

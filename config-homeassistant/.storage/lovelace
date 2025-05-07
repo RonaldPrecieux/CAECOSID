@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Nouvelle section"
+                }
+              ]
+            }
+          ],
+          "background": {
+            "opacity": 33,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/4bfba840cc09173a8d90e484fbeff6f1/original"
+          },
+          "cards": [],
+          "badges": []
+        }
+      ]
+    }
+  }
+}

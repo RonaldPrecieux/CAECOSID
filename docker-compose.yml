@@ -8,9 +8,9 @@ services:
       - "1883:1883"
       - "9001:9001"
     volumes:
-      - ./mosquitto/config:/mosquitto/config
-      - ./mosquitto/data:/mosquitto/data
-      - ./mosquitto/log:/mosquitto/log
+      - ./config-mosquitto/config:/mosquitto/config
+      - ./config-mosquitto/data:/mosquitto/data
+      - ./config-mosquitto/log:/mosquitto/log
 
   influxdb:
     image: influxdb:2.7
@@ -18,8 +18,8 @@ services:
     ports:
       - "8086:8086"
     volumes:
-      - ./influxdb/data:/var/lib/influxdb2
-      - ./influxdb/config:/etc/influxdb2
+      - ./config-influxdb/data:/var/lib/influxdb2
+      - ./config-influxdb/config:/etc/influxdb2
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=admin
@@ -27,3 +27,15 @@ services:
       - DOCKER_INFLUXDB_INIT_ORG=rolux-org
       - DOCKER_INFLUXDB_INIT_BUCKET=dommo-bucket
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=supersecrettoken
+
+  homeassistant:
+    image: homeassistant/home-assistant:stable
+    container_name: homeassistant
+    restart: unless-stopped
+    ports:
+      - "8123:8123"
+    volumes:
+      - ./config-homeassistant:/config
+    environment:
+      - TZ=Africa/Porto-Novo
+    network_mode: host

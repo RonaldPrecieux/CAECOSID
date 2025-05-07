@@ -15,7 +15,7 @@ SENSORS = [
     "co2",
     "presence",
     "fume",
-    "accelerometer_3axis",
+    "acceleromete",
     "heart_rate"
 ]
 
@@ -39,7 +39,7 @@ def generate_sensor_data(sensor_type):
         return random.choice([0, 1])  # 0 ou 1
     elif sensor_type == "fume":
         return round(random.uniform(0.0, 1.0), 2)  # ratio 0-1
-    elif sensor_type == "accelerometer_3axis":
+    elif sensor_type == "acceleromete":
         return {
             "x": round(random.uniform(-2.0, 2.0), 2),
             "y": round(random.uniform(-2.0, 2.0), 2),

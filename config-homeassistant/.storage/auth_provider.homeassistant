@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "edgedomo",
+        "password": "JDJiJDEyJHYuTGtvMXNDdjlHbzVRT1ZsblZaSk9uaEtpVkFQQjU4UDFkbldUVFlaY0lzcTBjU2tOZk5l"
+      }
+    ]
+  }
+}

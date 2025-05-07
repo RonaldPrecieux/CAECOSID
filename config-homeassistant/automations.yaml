@@ -1,0 +1,42 @@
+- id: '1746041240201'
+  alias: Allumer Ventilo
+  description: Active le ventilateur si température > 28°C ou humidité > 75%
+  triggers:
+  - entity_id:
+    - sensor.temperature_salon
+    above: 28
+    trigger: numeric_state
+  - entity_id: sensor.humidite_salon
+    above: 75
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.ventilateur_salon
+  mode: single
+- id: '1746043190796'
+  alias: Eteindre le ventilateur
+  description: Éteint le ventilateur si T < 26°C et H < 70%
+  triggers:
+  - entity_id:
+    - sensor.temperature_salon
+    below: 26
+    trigger: numeric_state
+  - entity_id: sensor.humidite_salon
+    below: 70
+    trigger: numeric_state
+  conditions:
+  - condition: numeric_state
+    entity_id: sensor.temp_salon
+    below: 26
+  - condition: numeric_state
+    entity_id: sensor.humidite_salon
+    below: 70
+  actions:
+  - action: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.ventilateur_salon
+  mode: single
